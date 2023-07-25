@@ -60,7 +60,7 @@
 		<div class="card m-2">
 			<div class="card-header">POST 방식</div>
 			<div class="card-body">
-				<form class="m-2" method="post" action="method">
+				<form class="m-2" method="post" action="method" enctype="application/x-www-form-urlencoded">
 					<div class="form-group">
 						<label for="bkind">bkind</label> <input type="text"
 							class="form-control" id="bkind" name="bkind" value="free">
