@@ -4,11 +4,9 @@
 <%@ include file="/WEB-INF/views/common/header.jsp"%>
 
 <div class="card m-2">
-	<div class="card-header">
-		예외 처리 내용(NullPointerException 처리)
-	</div>
+	<div class="card-header">객체 생성(싱글톤)과 의존 주입</div>
 	<div class="card-body">
-		서버가 정상적으로 동작하지 않습니다. 다시 시도해 주세요.
+		실행결과는 콘솔 창의 로그로 출력
 	</div>
-</div>
+	
 <%@ include file="/WEB-INF/views/common/footer.jsp"%>
