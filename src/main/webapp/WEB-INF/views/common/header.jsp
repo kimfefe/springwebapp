@@ -25,13 +25,24 @@
             </a>
             <div>
                <div>
-               	<c:if test="${login == null}">
-                  <a href="${pageContext.request.contextPath}/ch08/content" class="btn btn-success btn-sm">로그인</a>
-                  
+               <!-- Ch08 -->
+               <%--
+               <c:if test="${Login == null}">
+                  <a href="${pageContext.request.contextPath}/ch08/login" class="btn btn-success btn-sm">로그인</a>
                	</c:if>
-              	<c:if test="${login != null}">
-              		<img src="${pageContext.request.contextPath}/resources/images/face/${login.mid}.png" width="30px" height="30px"/>
+              	<c:if test="${Login != null}">
+              		<img src="${pageContext.request.contextPath}/resources/images/face/${login.mid}" width="30px" height="30px"/>
                   	<a href="${pageContext.request.contextPath}/ch08/logout" class="btn btn-success btn-sm">로그아웃</a>
+               	</c:if> 
+               	--%>
+               
+               	<c:if test="${ch13Login == null}">
+                  <a href="${pageContext.request.contextPath}/ch13/login" class="btn btn-warning btn-sm">로그인</a>
+                  <a href="${pageContext.request.contextPath}/ch13/join" class="btn btn-danger btn-sm">회원가입</a>
+               	</c:if>
+              	<c:if test="${ch13Login != null}">
+              		<img src="${pageContext.request.contextPath}/resources/images/face/member08.png" width="30px" height="30px"/>
+                  	<a href="${pageContext.request.contextPath}/ch13/logout" class="btn btn-success btn-sm">로그아웃</a>
                	</c:if>
                </div>
             </div>
